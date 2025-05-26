@@ -2,6 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
+  <title>配料介紹</title>
   <style>
 
   html, body {
@@ -13,23 +14,92 @@
     width: 100%;
   }
 
-  .d {
-      background-color: #FFC1A6;
-      padding: 5px 20px;
-      display: flex;
-      gap: 30px;
-      align-items: center;
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .tabs input[type="radio"] {
+    display: none;
+  }
+
+  .tabs label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    border: 3px solid #ccc;
+    background-color: #f0f0f0;
+    margin-bottom: 5px;
+    font-size: 35px;
+  }
+
+  .tabs input[type="radio"]:checked + label {
+    background-color: #FFE4E1;
+    color: black;
+  }
+
+.content {
+  display: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgba(254, 244, 212, 0.5);
+  height: 400px;
+  font-size: 25px;
+}
+
+  #tab1:checked ~ #content1,
+  #tab2:checked ~ #content2,
+  #tab3:checked ~ #content3,
+  #tab4:checked ~ #content4,
+  #tab5:checked ~ #content5,
+  #tab6:checked ~ #content6,
+  #tab7:checked ~ #content7,
+  #tab8:checked ~ #content8,
+  #tab9:checked ~ #content9,
+  #tab10:checked ~ #content10,
+  #tab11:checked ~ #content11,
+  #tab12:checked ~ #content12 {
+    display: block;
+  }
+
+
+  .banner {
+    width: 100%;
+    display: block;
+    margin: 0;         /* 可根據需求調整寬度 */
+    height: 400px;         /* 設定你要的顯示高度 */
+    object-fit: cover;     /* 保持圖片比例填滿容器 */
+       /* 對齊圖片底部（只顯示下半部） */
+    display: block;
     }
+
+  .pi {
+    width: 100%;
+    display: block;
+    margin: 0;         /* 可根據需求調整寬度 */
+    height: 200px;         /* 設定你要的顯示高度 */
+    object-fit: cover;     /* 保持圖片比例填滿容器 */
+       /* 對齊圖片底部（只顯示下半部） */
+    display: block;
+    }
+
+  .d {
+      padding: 5px 50px;
+      box-sizing: border-box;
+     }
 
     .d a {
       text-decoration: none;
       color: #333;
       font-weight: bold;
       cursor: pointer;
-      font-size: 40px;
+      font-size: 35px;
     }
 
-  .navbar {
+    .navbar {
       background-color: #FFC1A6;
       padding: 10px 20px;
       display: flex;
@@ -44,8 +114,8 @@
       cursor: pointer;
       font-size: 25px;
     }
-    .dropdown {
 
+    .dropdown {
       position: relative;
       display: inline-block;
     }
@@ -53,8 +123,8 @@
     .dropdown-content {
       display: none;
       position: absolute;
-      top: calc(100% + 10px); 
-      left: -10px;
+      top: 100%; 
+      left: -25px;
       background-color: #fff8f0;
       min-width: 160px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -77,39 +147,148 @@
       display: block;
     }
 
+        @media (max-width: 768px) {
+      .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+      }
+
+      .dropdown-content a {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+      }
+    }
+
+    img {
+      display: inline-block;  /* 讓圖片顯示為行內塊元素 */
+      margin: 10px;
+      -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+      mask-image: linear-gradient(to bottom, black 80%, transparent 100%); } 
+
+    h1 {
+      font-size: 50px;
+      color: #2c3e50;
+      margin: 20px 0;
+    }
+
+    .description {
+      font-size: 25px;
+    }
+
  </style>
 </head>
 
 <body>  
 
   <div class="navbar">
+    <a href="index.html">豆花首頁</a>
+
     <div class="dropdown">
       <a>更多內容 ▼</a>
       <div class="dropdown-content">
-        <a href="one.html">豆花的製作</a>
-        <a href="two.html">豆花配料</a>
+        <a href="one.html">自製豆花</a>
         <a href="three.html">鹹甜豆花</a>
-        <a href="four.html">豆花與健康</a>
+        <a href="four.html">豆花與熱量</a>
       </div>
     </div>
-    <a href="#contact">聯絡我們</a>
+  <a href="#contact">聯絡我們</a>
   </div>
 
-  <p style="font-size: 35px;">豆花配料</p>
-  <p style="font-size: 35px;">豆花常見的配料有：</p>
+  <img class="banner" src="images/fea_b.jpg" alt="豆花圖片1" width="600" >
 
-  <div class="d">
-    <ul style="list-style-type: none; padding: 0;">
-      <li><a href="#1">豆花</a></li>
-      <li><a href="#2">仙草</a></li>
-      <li><a href="#3">愛玉</a></li>
-    </ul>
-  </div>
+  <h1>——— 配料介紹 ———</h1>
+  <p style="font-size: 25px;">
+    配料不僅提升豆花的風味同時，<br>
+    也滿足不同消費者的口感需求。 </p>
+  <p style="font-size: 35px;">
+    台灣豆花常見配料</p>
 
-  <h2 id="1">豆花介紹</h2>
-  <p>豆花是一道滑嫩的傳統甜品，深受大家喜愛。</p>
 
+
+<div style="display: flex; justify-content: center; text-align: center;">
+<div class="tabs">
+    <input type="radio" name="tab" id="tab1" checked>
+  <label for="tab1">花生仁</label>
+  <input type="radio" name="tab" id="tab2">
+  <label for="tab2">芋圓</label>
+  <input type="radio" name="tab" id="tab3">
+  <label for="tab3">珍珠</label>
+  <div id="content1" class="content"> 
+    <img class="pi" src="images/6.png" alt="花生仁" >
+    花生香濃、豆花滑嫩，一口下去，綿密中帶著淡淡堅果香，剛剛好。</div>
+  <div id="content2" class="content">
+    <img class="pi" src="images/7.png" alt="芋圓" >
+    一口咬下，芋圓的彈性與香甜，搭配豆花的細膩滑順，口感層次豐富又和諧，讓人一吃就愛上這份絕妙搭配。</div>
+  <div id="content3" class="content">
+    <img class="pi" src="images/8.png" alt="珍珠" >
+    每一顆珍珠咬下去帶來彈跳感，搭配滑順的豆花，讓口中層次豐富，甜而不膩，絕妙融合。</div>
+</div>
+<div class="tabs">
+    <input type="radio" name="tab" id="tab4" checked>
+  <label for="tab4">蜜芋頭</label>
+  <input type="radio" name="tab" id="tab5">
+  <label for="tab5">蜜花豆</label>
+  <input type="radio" name="tab" id="tab6">
+  <label for="tab6">小湯圓</label>
+   <div id="content4" class="content">
+    <img class="pi" src="images/9.png" alt="蜜芋頭" >
+    芋頭的鬆軟厚實，帶著淡淡甜香，與豆花的滑嫩柔順一拍即合，像是慢下來的午後時光，平淡卻讓人留戀。</div>
+  <div id="content5" class="content">
+    <img class="pi" src="images/10.png" alt="蜜花豆" >
+    <br>蜜花豆搭配豆花的滑順細緻，甜而不膩、層次分明，溫柔實在，讓人一口接一口。</div>
+  <div id="content6" class="content">
+    <img class="pi" src="images/11.png" alt="小湯圓" >
+    <br>小湯圓Q彈香甜，搭配豆花滑嫩順口，口感溫柔又療癒。</div>
+</div>
+<div class="tabs">
+<input type="radio" name="tab" id="tab7" checked>
+  <label for="tab7">綠豆</label>
+  <input type="radio" name="tab" id="tab8">
+  <label for="tab8">仙草</label>
+  <input type="radio" name="tab" id="tab9">
+  <label for="tab9">愛玉</label>
+  <div id="content7" class="content">
+    <img class="pi" src="images/12.png" alt="綠豆" >
+    <br>綠豆清香綿密，搭配豆花滑順細緻，清爽不膩，是低調卻耐吃的組合。</div>
+  <div id="content8" class="content">
+    <img class="pi" src="images/13.png" alt="仙草" >
+    仙草清香滑順，搭配豆花柔嫩綿滑，涼爽又平衡，是最合拍的雙主角。</div>
+  <div id="content9" class="content">
+    <img class="pi" src="images/14.png" alt="愛玉" >
+    愛玉清爽滑溜，帶著淡淡檸檬香氣，與豆花的綿密柔嫩形成輕盈的對比。
+    <br>一清一柔，甜中帶酸，涼得剛剛好，毫不負擔。</div>
+</div>
+<div class="tabs">
+<input type="radio" name="tab" id="tab10" checked>
+  <label for="tab10">布丁</label>
+  <input type="radio" name="tab" id="tab11">
+  <label for="tab11">粉粿</label>
+  <input type="radio" name="tab" id="tab12">
+  <label for="tab12">薏仁</label>
+  <div id="content10" class="content">
+    <img class="pi" src="images/15.png" alt="布丁" >
+    布丁有著濃郁蛋香與焦糖甜味，與豆花的輕柔細膩恰好互補，一口下去，濃淡交融，層次豐富，甜而不膩，幸福剛剛好。</div>
+  <div id="content11" class="content">
+    <img class="pi" src="images/16.png" alt="粉粿" >
+    粉粿Q彈滑嫩，帶著微微的黏韌感，一口咬下，是Q與嫩的交錯口感，讓每一口都多了一點嚼勁，也多了一點驚喜。</div>
+  <div id="content12" class="content">
+    <img class="pi" src="images/17.png" alt="薏仁" >
+    <br>薏仁穀香自然，搭配豆花清甜滑嫩，味道溫和又層次豐富。</div>
+</div>
+</div>
+
+
+  <p style="font-size: 35px;">
+  每種不同配料，都是不同的心情。<br>
+  這一碗，是你予自己的溫柔時光。 </p>
+
+ 
   <h2 id="contact">聯絡我們</h2>
+  <p style="font-size: 25px;">魔法豆花小舖管理員信箱：123456789@gmail.com</p>
+  <br>
+
 
 </body>
 </html>
+
