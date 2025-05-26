@@ -40,7 +40,16 @@
       cursor: pointer;
     }
 
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column; /* 直排 */
+        gap: 10px;
+      }
 
+      .navbar a {
+        font-size: 10px;  /* 字縮小一點 */
+      }
+    }
 
 
     .dropdown {
@@ -76,7 +85,18 @@
       display: block;
     }
 
+    @media (max-width: 768px) {
+      .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+      }
 
+      .dropdown-content a {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+      }
+    }
 
     img {
       display: inline-block;  /* 讓圖片顯示為行內塊元素 */
@@ -91,7 +111,16 @@
 
     }
 
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 40px;
+      }
 
+      img {
+        mask-image: none;
+        -webkit-mask-image: none;
+      }
+    }
 
  
   </style>
@@ -126,13 +155,13 @@
     但說到底，那家店，常常就是離自己最近的那一家。<br>
     就像手搖飲，每個人最愛的，往往是下樓轉角就能買到的那杯。<br>
     味道固然重要，方便才是日常裡的第一名。</p>
-  <div style="display: flex; justify-content: center; text-align: center; gap: 20px;font-size: 25px;">
-  <div>
+  <p style=" font-size: 25px;">
+
     豆花，承載著時光的滋味，雖歷經歲月洗禮，依然是人們心中不變的甜蜜選擇。<br>
     主要由黃豆製成，口感滑嫩細緻，無論是加上糖水、花生還是粉圓，每一口都能帶來溫柔的甜蜜。<br>
     它不僅是夏天消暑的首選，更是許多人童年的回憶與味覺的慰藉。
-  </div>
-</div>
+  </p>
+
 
 <br>
 <br>
