@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>豆花!</title>
+  <style>
+
+
+   html, body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+    .banner {
+      width: 100%;
+      display: block;
+      margin: 0;         /* 可根據需求調整寬度 */
+      height: 400px;         /* 設定你要的顯示高度 */
+      object-fit: cover;     /* 保持圖片比例填滿容器 */
+       /* 對齊圖片底部（只顯示下半部） */
+      display: block;
+    }
+    
+
+    .navbar {
+      background-color: #FFC1A6;
+      padding: 10px 20px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column; /* 直排 */
+        gap: 10px;
+      }
+
+      .navbar a {
+        font-size: 10px;  /* 字縮小一點 */
+      }
+    }
+
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%; /* 讓選單在觸發按鈕正下方 */
+      left: -40px;
+      background-color: #fff8f0;
+      min-width: 160px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ffe4d4;
+    }
+
+    /* 滑鼠移到dropdown顯示內容 */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+      }
+
+      .dropdown-content a {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+      }
+    }
+
+    img {
+      display: inline-block;  /* 讓圖片顯示為行內塊元素 */
+      margin: 10px;
+      -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+      mask-image: linear-gradient(to bottom, black 80%, transparent 100%); } 
+            
+    h1 {
+      font-size: 60px;
+      color: #2c3e50;
+      margin: 20px 0;
+
+    }
+
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 40px;
+      }
+
+      img {
+        mask-image: none;
+        -webkit-mask-image: none;
+      }
+    }
+
+    .description {
+      font-size: 25px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .description {
+        font-size: 10px; /* 手機螢幕時調小字體 */
+      }
+    }
+
+ 
+  </style>
+</head>
+<body>  
+  <div class="navbar">
+    <a href="#intro">豆花介紹</a>
+
+    <div class="dropdown">
+      <a>更多內容 ▼</a>
+      <div class="dropdown-content">
+        <a href="one.html">製作方法</a>
+        <a href="two.html">配料介紹</a>
+        <a href="three.html">健康好處</a>
+        <a href="four.html">健康好處</a>
+      </div>
+    </div>
+  <a href="#contact">聯絡我們</a>
+  </div>
+
+<img class="banner" src="images/1748251138586.jpg" alt="豆花圖片1" width="600" >
+
+
+  <h1> —— 豆花 ——</h1>
+  <p class="description">夏天解渴消暑的最佳甜品 </p>
+  <br>
+
+  <p class="description">關於豆花我們製作了幾個不同主題頁面，點選左上角"更多內容 ▼"即可進入頁面</p>
+
+  <p class="description">
+    每個喜歡豆花的人，心中都有一家最推的豆花店。<br>
+    但說到底，那家店，常常就是離自己最近的那一家。<br>
+    就像手搖飲，每個人最愛的，往往是下樓轉角就能買到的那杯。<br>
+    味道固然重要，方便才是日常裡的第一名。</p>
+  <p class="description">
+
+    豆花，承載著時光的滋味，雖歷經歲月洗禮，依然是人們心中不變的甜蜜選擇。<br>
+    主要由黃豆製成，口感滑嫩細緻，無論是加上糖水、花生還是粉圓，每一口都能帶來溫柔的甜蜜。<br>
+    它不僅是夏天消暑的首選，更是許多人童年的回憶與味覺的慰藉。
+  </p>
+
+
+<br>
+<br>
+<div style="display: flex; justify-content: center; text-align: center; ">
+
+  <img src="images/2.png "alt=豆花圖片 width="110"px height="100"px ; >
+  <img src="images/3.png" alt="豆花圖片2" width="160"px height="100"px ;>
+  <img src="images/4.png" alt="豆花圖片2" width="100"px height="100"px ;>
+  <img src="images/5.png" alt="豆花圖片2" width="100"px height="100"px ;>
+</div>
+
+  <br> 
+  <h2 id="contact">聯絡我們</h2>
+  <p style="font-size: 25px;">魔法豆花小舖管理員信箱：123456789@gmail.com</p>
+  <br>
+
+</body>
+</html>
