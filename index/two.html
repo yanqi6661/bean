@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <style>
+
+  html, body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .d {
+      background-color: #FFC1A6;
+      padding: 5px 20px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .d a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 40px;
+    }
+
+  .navbar {
+      background-color: #FFC1A6;
+      padding: 10px 20px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 25px;
+    }
+    .dropdown {
+
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: calc(100% + 10px); 
+      left: -10px;
+      background-color: #fff8f0;
+      min-width: 160px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ffe4d4;
+    }
+
+    /* 滑鼠移到dropdown顯示內容 */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+ </style>
+</head>
+
+<body>  
+
+  <div class="navbar">
+    <div class="dropdown">
+      <a>更多內容 ▼</a>
+      <div class="dropdown-content">
+        <a href="one.html">豆花的製作</a>
+        <a href="two.html">豆花配料</a>
+        <a href="three.html">鹹甜豆花</a>
+        <a href="four.html">豆花與健康</a>
+      </div>
+    </div>
+    <a href="#contact">聯絡我們</a>
+  </div>
+
+  <p style="font-size: 35px;">豆花配料</p>
+  <p style="font-size: 35px;">豆花常見的配料有：</p>
+
+  <div class="d">
+    <ul style="list-style-type: none; padding: 0;">
+      <li><a href="#1">豆花</a></li>
+      <li><a href="#2">仙草</a></li>
+      <li><a href="#3">愛玉</a></li>
+    </ul>
+  </div>
+
+  <h2 id="1">豆花介紹</h2>
+  <p>豆花是一道滑嫩的傳統甜品，深受大家喜愛。</p>
+
+  <h2 id="contact">聯絡我們</h2>
+
+</body>
+</html>
