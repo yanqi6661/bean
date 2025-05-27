@@ -1,1 +1,186 @@
-<p style="font-size: 35px;">豆花製作 </p>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>自製豆花</title>
+  <style>
+
+ html, body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+    .d {
+      padding: 5px 50px;
+      box-sizing: border-box;
+     }
+
+    .d a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 35px;
+    }
+
+    .d ul {
+      list-style-type: none; /* 去掉圓點 */
+      padding-left: 0;        /* 去掉縮排 */
+      margin: 0;
+    }
+
+
+    .navbar {
+      background-color: #FFC1A6;
+      padding: 10px 20px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 25px;
+    }
+
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%; /* 讓選單在觸發按鈕正下方 */
+      left: -25px;
+      background-color: #fff8f0;
+      min-width: 160px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ffe4d4;
+    }
+
+    /* 滑鼠移到dropdown顯示內容 */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+      }
+
+      .dropdown-content a {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+      }
+    }
+
+    .description {
+      font-size: 35px;
+    }
+
+    h1 {
+      font-size: 60px;
+      color: #2c3e50;
+      margin: 20px 0;
+
+    }
+
+
+
+  </style>
+</head>
+
+<body>  
+  <div class="navbar">
+    <a href="#intro">豆花首頁</a>
+
+    <div class="dropdown">
+      <a>更多內容 ▼</a>
+      <div class="dropdown-content">
+        <a href="two.html">配料介紹</a>
+        <a href="three.html">鹹甜豆花</a>
+        <a href="four.html">豆花與熱量</a>
+      </div>
+    </div>
+  <a href="#contact">聯絡我們</a>
+  </div>
+
+<h1>—— 豆花製作 ——</h1>
+<p class="description">以下食譜皆源自於網路 </p>
+
+<div class="d">
+<ul>
+  <li><a href="#one">使用熟石膏粉製作豆花</a></li>
+  <li><a href="#two">使用吉利丁片製作豆花</a></li>
+</ul>
+
+
+
+<p class="description" id="one">使用熟石膏粉製作豆花</p>
+<p class="description">
+需要準備的食材有：<br>
+新鮮豆漿1.5公升、熟石膏粉1.5大匙、地瓜粉1.5大匙、水75ml</p>
+<img class="pi" src="images/18.png" alt="熟石膏粉" >
+<p class="description">食品級石膏粉：硫酸鈣</p>
+<p class="description">步驟1<br>
+   把石膏粉、太白粉跟水混合，倒入一個大鍋子內</p>
+<p class="description">步驟2<br>
+   豆漿加熱到85–90度c，一口氣沖入裝有石膏水的鍋子裡<br>
+ （石膏水攪拌一下，注意不要沈澱）</p>
+<p class="description">步驟3<br>
+   蓋上布再加蓋，靜置30分鐘（請不要移動鍋子）</p>
+<p class="description">步驟4<br>
+	 加上糖水與珍珠，豆花完成！</p>
+
+  <div class="d">
+  <p class="description">原食譜網址：
+  <a href="https://icook.tw/recipes/364082" target="_blank">https://icook.tw/recipes/364082</a>
+  </p>
+  </div>
+
+<p class="description" id="two">使用吉利丁片製作豆花</p>
+<p class="description">
+需要準備的食材有：<br>
+無糖豆漿170ML、吉利丁片x1<br>
+<img class="pi" src="images/19.png" alt="吉利丁片" >
+<p class="description">吉利丁片圖示</p>
+<p class="description">步驟1<br>
+   將吉利丁片用冰水泡軟</p>
+<p class="description">步驟2<br>
+   無糖豆漿放在爐上小火加熱至微溫即可</p>
+<p class="description">步驟3<br>
+   吉利丁片擰乾後丟入步驟2攪拌至溶化</p>
+<p class="description">步驟4<br>
+   倒入準備好的容器內放涼後再放入冰箱冷藏<br>
+2-3H至凝固即可取出加入糖水內</p>
+  <div class="d">
+  <p class="description">原食譜網址：
+  <a href="https://icook.tw/recipes/255047" target="_blank">https://icook.tw/recipes/255047</a>
+  </p>
+  </div>
+
+</body>
+</html>
