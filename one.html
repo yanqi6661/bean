@@ -14,6 +14,22 @@
     width: 100%;
   }
 
+      .banner {
+      width: 100%;
+      display: block;
+      margin: 0;         /* 可根據需求調整寬度 */
+      height: 400px;         /* 設定你要的顯示高度 */
+      object-fit: cover;     /* 保持圖片比例填滿容器 */
+       /* 對齊圖片底部（只顯示下半部） */
+      display: block;
+    }
+
+      img {
+      display: inline-block;  /* 讓圖片顯示為行內塊元素 */
+      margin: 10px;
+      -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+      mask-image: linear-gradient(to bottom, black 80%, transparent 100%); } 
+
     .d {
       padding: 5px 50px;
       box-sizing: border-box;
@@ -128,6 +144,9 @@
   <a href="#contact">聯絡我們</a>
   </div>
 
+  <img class="banner" src="images/1748251138586.jpg" alt="豆花圖片1" width="600" >
+
+
 <h1>—— 豆花製作 ——</h1>
 <p class="description">以下食譜皆源自於網路 </p>
 
@@ -181,6 +200,11 @@
   <a href="https://icook.tw/recipes/255047" target="_blank">https://icook.tw/recipes/255047</a>
   </p>
   </div>
+
+  <br> 
+  <h2 id="contact">聯絡我們</h2>
+  <p style="font-size: 25px;">魔法豆花小舖管理員信箱：123456789@gmail.com</p>
+  <br>
 
 </body>
 </html>
